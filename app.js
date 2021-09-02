@@ -10,6 +10,14 @@ app.engine(
   exphbs({
     defaultLayout: 'main',
     extname: '.hbs',
+    helpers: {
+      ifCond: function (a, b, options) {
+        if (a === b) {
+          return options.fn(this)
+        }
+        return options.inverse(this)
+      },
+    },
   })
 )
 app.set('view engine', 'hbs')
@@ -21,9 +29,9 @@ app.get('/', (req, res) => {
 
 app.post('/', (req, res) => {
   const { role } = req.body
-  if (!role) return res.render('index', { unselect: true })
+  if (!role) return res.render('index', { unselect: true }) // 沒有選的話直接回傳顯示錯誤訊息
   const trashTalk = generateTrashTalk(role)
-  return res.render('index', { trashTalk })
+  return res.render('index', { trashTalk, role })
 })
 
 app.listen(PORT, () => console.log(`App is running on http://localhost:${PORT}`))
