@@ -54,14 +54,15 @@
     </div>
     
     <div class="row d-flex justify-content-center p-3">
-      <div class="col-2 d-flex flex-column justify-content-center align-items-end">
-        <button type="submit" class="btn btn-primary mb-3">產生幹話</button>
-        <button type="button" class="btn btn-secondary">複製幹話</button>
+      <div class="col-2 d-flex flex-column justify-content-start align-items-end">
+        <button type="submit" class="btn btn-primary my-3">產生幹話</button>
+        <button type="button" class="btn btn-secondary" id="copy-button">複製幹話</button>
       </div>
       <div class="col-6 text-start">
         <div class="input-group">
-          <textarea class="form-control" aria-label="With textarea" rows="5">{{ trashTalk }}</textarea>
+          <textarea class="form-control" id="trash-talk" aria-label="With textarea" rows="5">{{ trashTalk }}</textarea>
         </div>
+        <div id="copy-text" class="form-text"></div>
       </div>
     </div>
   </form>
