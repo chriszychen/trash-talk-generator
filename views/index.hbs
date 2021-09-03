@@ -10,7 +10,7 @@
     </div>
     {{/if}}
     <div class="row d-flex justify-content-evenly">
-      <div class="col-4">
+      <div class="col-md-4">
         <div class="card border-light">
           <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg" class="card-img-top" alt="developer image">
           <div class="card-body d-flex justify-content-center">
@@ -23,7 +23,7 @@
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-md-4">
         <div class="card border-light">
           <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg" class="card-img-top"
             alt="designer image">
@@ -37,7 +37,7 @@
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-md-4">
         <div class="card border-light">
           <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg" class="card-img-top"
             alt="founder image">
@@ -54,15 +54,15 @@
     </div>
     
     <div class="row d-flex justify-content-center p-3">
-      <div class="col-2 d-flex flex-column justify-content-start align-items-end">
+      <div class="col-md-2 d-flex flex-column justify-content-start align-items-center">
         <button type="submit" class="btn btn-primary my-3">產生幹話</button>
-        <button type="button" class="btn btn-secondary" id="copy-button">複製幹話</button>
+        <button type="button" class="btn btn-secondary mb-3" id="copy-button">複製幹話</button>
       </div>
-      <div class="col-6 text-start">
+      <div class="col-md-6 text-start">
         <div class="input-group">
           <textarea class="form-control" id="trash-talk" aria-label="With textarea" rows="5">{{ trashTalk }}</textarea>
         </div>
-        <div id="copy-text" class="form-text ms-2"></div>
+        <div id="copy-text" class="form-text text-center ms-2"></div>
       </div>
     </div>
   </form>
