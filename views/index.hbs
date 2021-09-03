@@ -9,45 +9,39 @@
       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
     {{/if}}
-    <div class="row d-flex justify-content-evenly">
-      <div class="col-md-4">
-        <div class="card border-light">
-          <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg" class="card-img-top" alt="developer image">
-          <div class="card-body d-flex justify-content-center">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="role" id="developer-radio" value="engineer" {{#ifCond role 'engineer'}}checked{{/ifCond}}>
-              <label class="form-check-label" for="developer-radio">
-                工程師
-              </label>
-            </div>
+    <div class="row d-flex justify-content-evenly align-items-stretch">
+      <div class="col-md-3 card border-secondary mb-3 p-0">
+        <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg" class="card-img-top" alt="developer image" style="object-fit: cover; height: 80%;">
+        <div class="card-body d-flex justify-content-center">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="role" id="developer-radio" value="engineer" {{#ifCond role 'engineer'}}checked{{/ifCond}}>
+            <label class="form-check-label" for="developer-radio">
+              工程師
+            </label>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card border-light">
-          <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg" class="card-img-top"
-            alt="designer image">
-          <div class="card-body d-flex justify-content-center">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="role" id="designer-radio" value="designer" {{#ifCond role 'designer'}}checked{{/ifCond}}>
-              <label class="form-check-label" for="designer-radio">
-                設計師
-              </label>
-            </div>
+      <div class="col-md-3 card border-secondary mb-3 p-0">
+        <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg" class="card-img-top"
+          alt="designer image" style="object-fit: cover; height: 80%;">
+        <div class="card-body d-flex justify-content-center">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="role" id="designer-radio" value="designer" {{#ifCond role 'designer'}}checked{{/ifCond}}>
+            <label class="form-check-label" for="designer-radio">
+              設計師
+            </label>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card border-light">
-          <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg" class="card-img-top"
-            alt="founder image">
-          <div class="card-body d-flex justify-content-center">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="role" id="founder-radio" value="entrepreneur" {{#ifCond role 'entrepreneur'}}checked{{/ifCond}}>
-              <label class="form-check-label" for="founder-radio">
-                創業家
-              </label>
-            </div>
+      <div class="col-md-3 card border-secondary mb-3 p-0">
+        <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg" class="card-img-top"
+          alt="founder image" style="object-fit: cover; height: 80%;">
+        <div class="card-body d-flex justify-content-center">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="role" id="founder-radio" value="entrepreneur" {{#ifCond role 'entrepreneur'}}checked{{/ifCond}}>
+            <label class="form-check-label" for="founder-radio">
+              創業家
+            </label>
           </div>
         </div>
       </div>
