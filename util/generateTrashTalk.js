@@ -10,13 +10,13 @@ const task = {
 }
 const phrase = ['很簡單', '很容易', '很快', '很正常']
 
-function chooseRandomOne(array) {
+function getRandomElement(array) {
   const randomIndex = Math.floor(Math.random() * array.length)
   return array[randomIndex]
 }
 
 function generateTrashTalk(role) {
-  const text = `身為一個${target[role]}，${chooseRandomOne(task[role])}，${chooseRandomOne(phrase)}吧！`
+  const text = `身為一個${target[role]}，${getRandomElement(task[role])}，${getRandomElement(phrase)}吧！`
   return text
 }
 
